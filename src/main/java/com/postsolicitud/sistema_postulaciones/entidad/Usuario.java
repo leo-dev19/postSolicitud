@@ -2,8 +2,7 @@ package com.postsolicitud.sistema_postulaciones.entidad;
 
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +10,9 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "tb_usuario")
 public class Usuario {
     @Id
